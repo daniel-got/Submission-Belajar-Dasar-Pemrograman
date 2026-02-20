@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myArtcile</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-mark">my</span>
+          <span class="logo-text">A<em>rticle</em></span>
+        </div>
+        <div class="header-tagline">Berbagi cerita dan pengelamanmu</div>
+      </div>
+    </header>
+
+    <!-- nav -->
+    <nav class="site-nav" aria-label="Navigasi Utama">
+      <div class="nav-inner">
+        <ul class="nav-links">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#artikel" class="nav-link">Artikel</a></li>
+          <li><a href="#topik" class="nav-link">Topik</a></li>
+          <li>
+            <a
+              href="https://www.dicoding.com/users/daniel_calvin_njre"
+              class="nav-link nav-link--profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Profil Dicoding saya"
+            >
+              Profil Dicoding
+            </a>
+          </li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <main class="site-main" id="beranda">
+      <div class="content-wrapper">
+
+        <article class="article article--hero" id="artikel">
+          <div class="article__label">Artikel Unggulan</div>
+          <h1 class="article__title">
+            Mahasiswa KKN ITERA Kembangkan “Asisten Digital” untuk Petani Hidroponik: Cegah Gagal Panen Selada Lewat Notifikasi Telegram
+          </h1>
+          <div class="article__meta">
+            <span class="article__date">20 Februari 2025</span>
+            <span class="article__read-time">1 menit baca</span>
+            <span class="article__category">Pendidikan</span>
+          </div>
+          <div class="article__cover">
+            <img
+              src="images/hero.webp"
+              alt="Mahasiswa melakukan penyerahan alat ke pihak BUMDes"
+              class="article__cover-img"
+              width="800"
+              height="400"
+            />
+          </div>
+          <div class="article__body">
+            <p class="article__lead">
+              KALI REJO – Mahasiswa Kuliah Kerja Nyata (KKN) Tematik Kelompok 25 Institut Teknologi Sumatera (ITERA) meluncurkan inovasi teknologi tepat 
+              guna berupa “Selada Smart Monitoring” di Kampung Kali Rejo, Lampung Tengah. Inovasi berbasis Internet of Things (IoT) ini diserahkan langsung 
+              kepada Badan Usaha Milik Desa (BUMDes) Kali Rejo sebagai langkah strategis mendukung pertanian presisi (precision farming) di tingkat desa.
+            </p>
+            <p>
+              Alat ini dirancang untuk menjawab tantangan utama petani hidroponik, yakni ketidakpastian kadar nutrisi yang kerap menjadi penyebab utama 
+              gagal panen. Berbeda dengan sistem otomatisasi mahal yang rentan rusak, inovasi mahasiswa ITERA ini mengusung konsep “Smart Alerting System”.
+            </p>
+            <p>
+              Berbeda dengan sistem otomatisasi mahal yang rentan rusak, inovasi ini mengusung konsep “Smart Alerting System”. Alat ini berfungsi sebagai 
+              “mata digital” yang memantau kepekatan nutrisi (PPM) dan ketersediaan air selama 24 jam, lalu mengirimkan laporan kondisi tanaman langsung ke smartphone petani melalui aplikasi Telegram.
+            </p>
+            <h2>Solusi untuk Tantangan Petani</h2>
+            <p>
+              Budidaya selada hidroponik memerlukan presisi tinggi. Kekurangan nutrisi menyebabkan tanaman kerdil, sementara kelebihan nutrisi dapat membakar 
+              akar. Selama ini, pengelola hidroponik BUMDes harus mengecek tandon secara manual berulang kali, yang dinilai tidak efisien.
+            </p>
+            <p>
+              <q>Saat ini petani selalu melakukan pengukuran nutrisi tanaman secara konvensional yang mewajibkan petani ke lokasi penanaman hanya untuk mengukur 
+              nutrisi</q> ujar Daniel Calvin Simanjuntak, pengembang sistem ini. <q>Sistem ini menghapus pengukuran secara konvensional tersebut. Kami memberikan 
+              alternatif berupa sistem monitoring nutrisi yang dapat berjalan tanpa harus mendatangi lokasi tanaman.</q>
+            </p>
+            <h2>Teknologi <q>Local First, Cloud Second</q></h2>
+            <p>
+              Keunggulan utama sistem ini terletak pada arsitektur teknologinya yang disebut <q>Local first</q>. Menyadari bahwa koneksi internet di area pertanian 
+              sering tidak stabil, sistem ini dirancang untuk tetap bekerja 100% akurat meskipun tanpa sinyal internet.
+            </p>
+            <p>
+              Data kondisi tanaman akan selalu tampil real-time pada layar LCD di lokasi kebun. Ketika koneksi internet tersedia, sistem secara cerdas akan mengirimkan 
+              notifikasi ke Telegram, hanya jika ada kondisi darurat (seperti nutrisi drop drastis ), sehingga petani tidak terganggu oleh notifikasi sampah (<em>spam</em>). 
+              Petani juga dapat memeriksa keadaan nutrisi dengan mengirimkan perintah melalui chat Telegram, sehingga petani dapat langsung mengetahui keadaan dari nutrisi saat ini.
+            </p>
+            <h2>Fitur Unggulan Selada Smart Monitoring:</h2>
+            <ol>
+              <li><strong>Presisi Sensor TDS:</strong> Memantau Part Per Million (PPM) nutrisi sesuai fase umur tanaman (560–900 PPM).</li>
+              <li><strong>Presisi Sensor pH:</strong> Memantau kondisi pH air tandon agar tetap pada kondisi sehat.</li>
+              <li><strong>Presisi Sensor Suhu:</strong> Memantau kondisi suhu pada air tandon agar air tidak mengalami kenaikan suhu yang berlebihan.</li>
+              <li><strong>Smart Telegram Bot:</strong> Mengirim peringatan dini (early warning) sebelum tanaman mengalami kerusakan permanen.</li>
+              <li><strong>Desain Tangguh:</strong> Beroperasi mandiri tanpa bergantung penuh pada server/cloud.</li>
+            </ol>
+          </div>
+          <div class="article__tags" id="topik" aria-label="Tag artikel">
+            <span class="tag">IoT</span>
+            <span class="tag">Pendidikan</span>
+            <span class="tag">Technology</span>
+            <span class="tag">Farm</span>
+          </div>
+        </article>
+
+        <section class="article-grid" aria-label="Artikel Lainnya">
+          <h2 class="section-title">Artikel Terbaru</h2>
+          <div class="grid">
+
+            <article class="article article--card">
+              <img
+                src="images/webdev.png"
+                alt="CSS vs Flexbox"
+                class="article__thumb"
+                width="400"
+                height="220"
+              />
+              <div class="article__card-body">
+                <span class="article__label">Web Development</span>
+                <h2 class="article__card-title">
+                  <a href="#">CSS Grid vs Flexbox: Kapan Harus Menggunakan Masing-masing?</a>
+                </h2>
+                <p>Panduan lengkap memilih antara CSS Grid dan Flexbox berdasarkan kasus penggunaan yang tepat untuk layout modern.</p>
+                <a href="#" class="read-more">Baca Selengkapnya →</a>
+              </div>
+            </article>
+
+            <article class="article article--card">
+              <img
+                src="images/security.jpg"
+                alt="Ilustrasi cara kerja zero trust architecture"
+                class="article__thumb"
+                width="400"
+                height="220"
+              />
+              <div class="article__card-body">
+                <span class="article__label">Keamanan Siber</span>
+                <h2 class="article__card-title">
+                  <a href="#">Zero Trust Architecture: Paradigma Baru Keamanan Jaringan</a>
+                </h2>
+                <p>Pendekatan "never trust, always verify" kini menjadi standar industri dalam mengamankan infrastruktur digital modern.</p>
+                <a href="#" class="read-more">Baca Selengkapnya →</a>
+              </div>
+            </article>
+
+            <article class="article article--card">
+              <img
+                src="images/cloud_computing.png"
+                alt="Ilustrasi cloud computing dalam teknologi"
+                class="article__thumb"
+                width="400"
+                height="220"
+              />
+              <div class="article__card-body">
+                <span class="article__label">Cloud Computing</span>
+                <h2 class="article__card-title">
+                  <a href="#">Serverless vs Container: Memilih Arsitektur yang Tepat</a>
+                </h2>
+                <p>Perbandingan mendalam antara fungsi serverless dan container-based deployment untuk aplikasi skala enterprise.</p>
+                <a href="#" class="read-more">Baca Selengkapnya →</a>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="site-aside" aria-label="Informasi Penulis dan Sidebar">
+        <div class="aside-widget widget--author">
+          <h2 class="widget__title">Tentang Penulis</h2>
+          <div class="author-card">
+            <img
+              src="https://assets.cdn.dicoding.com/small/avatar/dos-e83be188bdfb9a70f412263304792c2c20260209025854.png"
+              alt="Foto profil penulis"
+              class="author-card__photo"
+              width="100"
+              height="100"
+            />
+            <div class="author-card__info">
+              <h3 class="author-card__name">Daniel Calvin Simanjuntak</h3>
+              <p class="author-card__role">Full-Stack Developer & Tech Writer</p>
+              <p class="author-card__bio">
+                Passionate tentang web development, AI, dan open-source. Sedang mendalami
+                machine learning dan cloud architecture. Aktif berbagi ilmu di Dicoding.
+              </p>
+              <div class="author-card__stats">
+                <div class="stat">
+                  <span class="stat__num">48</span>
+                  <span class="stat__label">Artikel</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__num">2.1k</span>
+                  <span class="stat__label">Pembaca</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__num">5</span>
+                  <span class="stat__label">Tahun</span>
+                </div>
+              </div>
+              <a
+                href="https://www.dicoding.com/users/daniel_calvin_njre"
+                class="btn-dicoding"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Profil Dicoding
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Topics Widget -->
+        <div class="aside-widget widget--topics">
+          <h2 class="widget__title">Topik Populer</h2>
+          <div class="topic-list">
+            <a href="#" class="topic-item">Kecerdasan Buatan <span>12</span></a>
+            <a href="#" class="topic-item">Web Development <span>10</span></a>
+            <a href="#" class="topic-item">Keamanan Siber <span>8</span></a>
+            <a href="#" class="topic-item">Cloud Computing <span>7</span></a>
+            <a href="#" class="topic-item">Open Source <span>6</span></a>
+            <a href="#" class="topic-item">DevOps <span>5</span></a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-mark">my</span>
+          <span class="logo-text">A<em>rticle</em></span>
+          <p>Blog pribadi menuju produktif.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Navigasi</h3>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#topik">Topik</a></li>
+            <li>
+              <a href="https://www.dicoding.com/users/daniel_calvin_njre" target="_blank" rel="noopener noreferrer">
+                Profil Dicoding
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Topik</h3>
+          <ul>
+            <li><a href="#">Kecerdasan Buatan</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Keamanan Siber</a></li>
+            <li><a href="#">Cloud Computing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 myArticle</p>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
