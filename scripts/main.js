@@ -1,9 +1,4 @@
-/**
- * TechPulse — Blog Teknologi & Digital
- * scripts/main.js
- */
-
-/* ---- NAV TOGGLE (Mobile Hamburger) ---- */
+/* mobile humberger */
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -24,7 +19,7 @@ if (navToggle && navLinks) {
   });
 }
 
-/* ---- ACTIVE NAV LINK (Scroll Spy) ---- */
+/* navlink active */
 const sections = document.querySelectorAll(
   "main[id], section[id], article[id]",
 );
@@ -44,54 +39,6 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 sections.forEach((s) => sectionObserver.observe(s));
-
-/* ---- NEWSLETTER FORM ---- */
-const newsletterBtn = document.querySelector(".newsletter-btn");
-const newsletterInput = document.querySelector(".newsletter-input");
-
-if (newsletterBtn && newsletterInput) {
-  newsletterBtn.addEventListener("click", () => {
-    const email = newsletterInput.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!email) {
-      shakeInput(newsletterInput);
-      showToast("Masukkan alamat email kamu terlebih dahulu.", "error");
-      return;
-    }
-
-    if (!emailRegex.test(email)) {
-      shakeInput(newsletterInput);
-      showToast("Format email tidak valid.", "error");
-      return;
-    }
-
-    newsletterInput.value = "";
-    newsletterBtn.textContent = "✓ Berhasil!";
-    newsletterBtn.style.backgroundColor = "#4caf50";
-    showToast(`Email ${email} berhasil didaftarkan! 🎉`, "success");
-
-    setTimeout(() => {
-      newsletterBtn.textContent = "Langganan";
-      newsletterBtn.style.backgroundColor = "";
-    }, 3000);
-  });
-
-  newsletterInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") newsletterBtn.click();
-  });
-}
-
-function shakeInput(el) {
-  el.style.animation = "shake 0.4s ease";
-  el.addEventListener(
-    "animationend",
-    () => {
-      el.style.animation = "";
-    },
-    { once: true },
-  );
-}
 
 /* ---- TOAST NOTIFICATION ---- */
 function showToast(message, type = "info") {
@@ -146,7 +93,6 @@ function showToast(message, type = "info") {
   }, 4000);
 }
 
-/* ---- INJECT SHAKE ANIMATION ---- */
 const shakeStyle = document.createElement("style");
 shakeStyle.textContent = `
   @keyframes shake {
@@ -159,7 +105,7 @@ shakeStyle.textContent = `
 `;
 document.head.appendChild(shakeStyle);
 
-/* ---- SMOOTH SCROLL OFFSET (sticky nav) ---- */
+/* sticky nav*/
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const targetId = this.getAttribute("href").slice(1);
@@ -173,7 +119,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-/* ---- READ TIME DISPLAY ---- */
+/* dynamic readtime */
 const articleBody = document.querySelector(".article__body");
 const readTimeEl = document.querySelector(".article__read-time");
 
@@ -183,7 +129,7 @@ if (articleBody && readTimeEl) {
   readTimeEl.textContent = `⏱ ${minutes} menit baca`;
 }
 
-/* ---- BACK TO TOP ---- */
+/* back to top btn */
 const backToTop = document.createElement("button");
 backToTop.textContent = "↑";
 backToTop.setAttribute("aria-label", "Kembali ke atas");
