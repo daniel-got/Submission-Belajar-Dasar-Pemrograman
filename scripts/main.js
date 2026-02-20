@@ -40,7 +40,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach((s) => sectionObserver.observe(s));
 
-/* ---- TOAST NOTIFICATION ---- */
+/* */
 function showToast(message, type = "info") {
   // Remove existing toast
   const existing = document.getElementById("tp-toast");
@@ -119,16 +119,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-/* dynamic readtime */
-const articleBody = document.querySelector(".article__body");
-const readTimeEl = document.querySelector(".article__read-time");
-
-if (articleBody && readTimeEl) {
-  const wordCount = articleBody.innerText.trim().split(/\s+/).length;
-  const minutes = Math.max(1, Math.round(wordCount / 200));
-  readTimeEl.textContent = `⏱ ${minutes} menit baca`;
-}
-
 /* back to top btn */
 const backToTop = document.createElement("button");
 backToTop.textContent = "↑";
@@ -172,12 +162,3 @@ backToTop.addEventListener("mouseleave", () => {
   backToTop.style.background = "rgba(245, 166, 35, 0.15)";
   backToTop.style.color = "#f5a623";
 });
-
-console.log(
-  "%cTechPulse 🔸 Blog Teknologi & Digital",
-  "color: #f5a623; font-size: 14px; font-weight: bold;",
-);
-console.log(
-  "%cDibuat dengan HTML, CSS, dan JavaScript Vanilla",
-  "color: #4fc3f7; font-size: 11px;",
-);

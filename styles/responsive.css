@@ -1,0 +1,133 @@
+/*responsive*/
+/* Tablet landscape (max 1100px) */
+@media (max-width: 1100px) {
+    :root {
+        --sidebar-width: 280px;
+    }
+}
+
+/* Tablet portrait (max 900px) */
+@media (max-width: 900px) {
+    .site-main {
+        flex-direction: column;
+    }
+
+    .site-aside {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .aside-widget {
+        /* Horizontal layout on tablet */
+    }
+
+    .article__cover-img {
+        height: 260px;
+    }
+}
+
+/* Mobile large (max 680px) */
+@media (max-width: 680px) {
+
+    /* Nav hamburger */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--color-surface);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid var(--color-accent);
+        padding: 0.5rem 0;
+        z-index: 200;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 0.85rem 1.5rem;
+    }
+
+    .nav-link--profile {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        width: calc(100% - 1.5rem);
+    }
+
+    .site-nav {
+        position: relative;
+    }
+
+    .article--hero {
+        padding: 1.5rem;
+    }
+
+    .article__title {
+        font-size: 1.6rem;
+    }
+
+    .article--card {
+        flex-direction: column;
+    }
+
+    .article__thumb {
+        width: 100%;
+        min-width: unset;
+        height: 180px;
+    }
+
+    .header-tagline {
+        display: none;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article__meta {
+        gap: 0.75rem;
+        font-size: 0.72rem;
+    }
+}
+
+/* Mobile small (max 420px) */
+@media (max-width: 420px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .article--hero {
+        padding: 1.25rem;
+    }
+
+    .article__title {
+        font-size: 1.4rem;
+    }
+
+    .site-main {
+        padding: 1.5rem 1rem;
+    }
+
+    .author-card__stats {
+        gap: 1rem;
+    }
+}
