@@ -1,17 +1,17 @@
 /*declare variabel, agar konsisten dalam penggunaan warna, serta memperhatikan hirarki warna serta font*/
 :root {
-  --color-bg: #0d0f14;
-  --color-surface: #14171f;
-  --color-surface-2: #1c2030;
-  --color-border: #252b3b;
-  --color-accent: #f5a623;
-  --color-accent-2: #4fc3f7;
-  --color-text: #e8eaf0;
-  --color-text-muted: #7a85a3;
-  --color-text-dim: #4a5168;
-  --color-header-bg: #080a0f;
-  --color-nav-bg: #0d0f14;
-  --color-footer-bg: #080a0f;
+  --color-bg: #1a1b26;
+  --color-surface: #24283b;
+  --color-surface-2: #292e42;
+  --color-border: #3b4261;
+  --color-accent: #ff9e64;
+  --color-accent-2: #7dcfff;
+  --color-text: #c0caf5;
+  --color-text-muted: #787c99;
+  --color-text-dim: #565f89;
+  --color-header-bg: #16161e;
+  --color-nav-bg: #1a1b26;
+  --color-footer-bg: #16161e;
 
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Source Sans 3', sans-serif;
